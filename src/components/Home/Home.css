@@ -1,0 +1,21 @@
+.home_container{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../../sources/arbox_1_bg.png');
+    background-size: 100% 100% ;
+    background-position:center ;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+#open{
+    filter: brightness(40%);
+}
+
+.drawer{
+    z-index: 10;
+
+}

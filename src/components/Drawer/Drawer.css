@@ -1,0 +1,12 @@
+.drawer_container{
+    position: relative;
+    z-index: 10;
+    border: 0.2px;
+    width: 40%;
+    height: 100vh;
+    float: right;
+    background-color: white;
+}
+
+
+
