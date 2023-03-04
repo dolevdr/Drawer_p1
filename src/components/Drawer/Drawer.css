@@ -8,5 +8,38 @@
     background-color: white;
 }
 
+.edit-cancel{
+    float: left;
+    margin: 2%;
+}
 
+.red{
+    color: red;
+}
 
+.txt{
+    font-size: 0.8vw;
+}
+
+.icon{
+    width: 0.8vw;
+    height: 0.8vw;
+}
+
+hr{
+    border-top: 1px #8c8b8b;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 100%;
+}
+
+.details{
+    float: left;
+    margin-left: 15%;
+    margin-bottom: 10%;
+}
+
+.icon-detail{
+    width: 1.7vw;
+    height: 1.7vw;
+}
