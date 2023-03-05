@@ -29,16 +29,21 @@ const Drawer = () => {
  
  
   const [participants, setParticipants] = useState([
-    {id:0, img:dagan, fullName:"Dagan Lev", curr:true},
-    {id:1, img:eden, fullName:"Eden Elian", curr:true},
-    {id:2, img:yoni, fullName:"Yoni Yatziv", curr:true},
-    {id:3, img:tom, fullName:"Tom Levi", curr:false},
-    {id:4, img:tomer, fullName:"Tomer Cohen", curr:false},
-    {id:5, img:dana, fullName:"Dana Tomi", curr:false},
+    {id:0, img:dagan, fullName:"Dagan Lev", curr:true, checked:false},
+    {id:1, img:eden, fullName:"Eden Elian", curr:true, checked:false},
+    {id:2, img:yoni, fullName:"Yoni Yatziv", curr:true, checked:false},
+    {id:3, img:tom, fullName:"Tom Levi", curr:false, checked:false},
+    {id:4, img:tomer, fullName:"Tomer Cohen", curr:false, checked:false},
+    {id:5, img:dana, fullName:"Dana Tomi", curr:false, checked:false},
   ]);
 
   const handleChange = useCallback((id) =>{
     participants.filter((obj)=>obj.id===id).map((val)=>val.curr = !val.curr);
+    setParticipants([...participants]);
+  },[participants]);
+  
+  const handleCheck = useCallback((id) =>{
+    participants.filter((obj)=>obj.id===id).map((val)=>val.checked = !val.checked);
     setParticipants([...participants]);
   },[participants]);
 
@@ -81,7 +86,7 @@ const Drawer = () => {
       </div>
       {
         participants.filter((obj)=>obj.curr===true).map((val, ind)=>(
-          <Participant key={ind} index={val.id} img={val.img} fullName={val.fullName} handleChange={handleChange}/>
+          <Participant key={ind} index={val.id} img={val.img} fullName={val.fullName} handleChange={handleChange} handleCheck={handleCheck} checked={val.checked}/>
         ))
       }
     </motion.div>
