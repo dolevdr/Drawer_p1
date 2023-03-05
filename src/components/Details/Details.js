@@ -7,8 +7,8 @@ const Details = (props) =>{
     return(
         <div className='details_container'>
             {icon}<br />
-            <h3>{title}</h3>
-            <span className='grey'>{subtitle}</span>
+            <h3 className='margTop'>{title}</h3>
+            <span className='grey margTop'>{subtitle}</span>
         </div>
     )
 

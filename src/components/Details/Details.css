@@ -1,7 +1,11 @@
 .details_container{
-    font-size: 0.8vw;
+    font-size: 0.7vw;
 }
 
 .grey{
     color: lightgrey;
+}
+
+.margTop{
+    margin: 3%;
 }

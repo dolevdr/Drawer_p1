@@ -1,0 +1,23 @@
+.search_container{
+    display: flex;
+    gap:15%;
+    justify-content: center;
+    margin-bottom: 5%;
+    font-size: 0.7vw;
+}
+
+.select{
+    width: 12vw;
+}
+
+.label{
+    margin-left: 0px;
+    margin-bottom: 2%;
+    display: flex;
+    gap:10%;
+    cursor: pointer;
+}
+
+.part{
+    margin-top: 1%;
+}
